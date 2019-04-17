@@ -18,7 +18,6 @@ webSocketServer.on('connection', function(ws) {
 	//exec("lp /home/ubuntu/devjs/1/webtoprint/data/test.pdf", function (error, stdout, stderr) {
 	});
 
-  });
 
   ws.on('close', function() {
     console.log('соединение закрыто');
