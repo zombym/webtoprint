@@ -16,7 +16,7 @@ webSocketServer.on('connection', function(ws) {
 	
   console.log('получено сообщение');
   console.log(message);
-  fs.writeFileSync(message, "files write!")
+  fs.writeFileSync(message, "files write!");
 	//exec("lp /home/ubuntu/devjs/1/webtoprint/data/test.pdf", function (error, stdout, stderr) {
 	});
 
