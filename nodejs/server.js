@@ -13,15 +13,16 @@ webSocketServer.on('connection', function(ws) {
   ws.on('message', function(message) {
     
 	
-console.log('получено сообщение');
-	exec("lp /home/ubuntu/devjs/1/webtoprint/data/test.pdf", function (error, stdout, stderr) {
-	
+  console.log('получено сообщение');
+  console.log(message);
+	//exec("lp /home/ubuntu/devjs/1/webtoprint/data/test.pdf", function (error, stdout, stderr) {
 	});
 
   });
 
   ws.on('close', function() {
     console.log('соединение закрыто');
+    
    });
 
 
